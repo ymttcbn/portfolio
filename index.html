@@ -1,0 +1,119 @@
+index.html
+all.html
+genre1.html
+genre2.html
+genre3.html
+genre4.html
+genre5.html
+style.css
+script.js
+images/
+  genre1/
+  genre2/
+  genre3/
+  genre4/
+  genre5/
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: #ffffff;
+  color: #333;
+}
+
+header {
+  padding: 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+nav a {
+  margin-right: 15px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.container {
+  padding: 20px;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.gallery img {
+  width: 200px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: 0.2s;
+}
+
+.gallery img:hover {
+  opacity: 0.8;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.8);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal img {
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.modal.active {
+  display: flex;
+}
+
+function openModal(src) {
+  const modal = document.getElementById("modal");
+  const modalImg = document.getElementById("modal-img");
+  modalImg.src = src;
+  modal.classList.add("active");
+}
+
+function closeModal() {
+  document.getElementById("modal").classList.remove("active");
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>My Gallery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>My Gallery</h1>
+  <nav>
+    <a href="all.html">全投稿</a>
+    <a href="genre1.html">ジャンル1</a>
+    <a href="genre2.html">ジャンル2</a>
+    <a href="genre3.html">ジャンル3</a>
+    <a href="genre4.html">ジャンル4</a>
+    <a href="genre5.html">ジャンル5</a>
+  </nav>
+</header>
+
+<div class="container">
+  <h2>説明</h2>
+  <p>
+    ここに自由にテキストを書ける。<br>
+    サイトの説明・注意書き・更新情報など。
+  </p>
+</div>
+
+</body>
+</html>
+
+
+add index
