@@ -115,5 +115,67 @@ function closeModal() {
 </body>
 </html>
 
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>全投稿</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+<body>
+
+<header>
+  <h1>全投稿</h1>
+  <nav>
+    <a href="index.html">トップ</a>
+  </nav>
+</header>
+
+<div class="container">
+  <div class="gallery">
+    <img src="images/genre1/sample1.jpg" onclick="openModal(this.src)">
+    <img src="images/genre2/sample2.jpg" onclick="openModal(this.src)">
+  </div>
+</div>
+
+<div class="modal" id="modal" onclick="closeModal()">
+  <img id="modal-img">
+</div>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>ジャンル1</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+<body>
+
+<header>
+  <h1>ジャンル1</h1>
+  <nav>
+    <a href="index.html">トップ</a>
+    <a href="all.html">全投稿</a>
+  </nav>
+</header>
+
+<div class="container">
+  <div class="gallery">
+    <img src="images/genre1/sample1.jpg" onclick="openModal(this.src)">
+  </div>
+</div>
+
+<div class="modal" id="modal" onclick="closeModal()">
+  <img id="modal-img">
+</div>
+
+</body>
+</html>
+
 
 add index
